@@ -118,10 +118,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin: 20px;
-	background-color: beige;
+	min-height: 400px;
+	margin: 40px 20px;
+	background-color: #fffdfa;
 	padding: 20px;
 	box-shadow: 2px solid black;
+	text-align: center;
 	h2,
 	h3 {
 		padding: 20px;
