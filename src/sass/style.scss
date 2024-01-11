@@ -100,13 +100,15 @@ body {
 
 .telephone {
 	text-decoration: none;
-	color: $text-color;
-	border-radius: 8px;
+	background-color: $buttons-color;
+	color: white;
+	border-radius: 25px;
 	padding: 10px 20px;
-	border: 1px solid black;
+	border: transparent;
 	margin-bottom: 20px;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	text-align: center;
+	font-weight: light;
 }
 .telephone:hover {
 	color: $main-color;
@@ -160,15 +162,17 @@ body {
 		border-radius: 5px;
 		width: 90%;
 		padding: 10px 0px;
+		margin-bottom: 20px;
 		.card {
 			h2 {
 				padding: 30px 0;
+				text-align: center;
 			}
 			padding: 0 20px;
 			ul {
 				padding: 10px 30px;
 			}
-			button {
+			.price-button {
 				padding: 10px 30px;
 				margin: 5px 0px;
 				border-radius: 15px;
@@ -176,11 +180,29 @@ body {
 				background-color: #b6c2ce;
 				font-size: 1.2rem;
 			}
+			.beige_button {
+				width: 100%;
+				padding: 10px 20px;
+				font-size: 1.1rem;
+				border-radius: 10px;
+				margin: 10px 0px;
+			}
+			.telegram {
+				background-color: #615140;
+				color: white;
+			}
+			.buy {
+				background-color: #fffdfa;
+				color: #625241;
+			}
 			.price {
 				padding: 10px;
 				color: $main-color;
 				font-size: 1.1rem;
 				font-weight: 400;
+			}
+			.priceLessons {
+				font-size: 1.4rem;
 			}
 		}
 		.telegram_contact {
@@ -199,5 +221,11 @@ body {
 	}
 	.blue {
 		background-color: #a4b3c3;
+		color: white;
+	}
+	.beige {
+		background-color: #f4ebe2;
+		color: black;
+		border: 2px dashed black;
 	}
 }
