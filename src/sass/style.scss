@@ -13,12 +13,7 @@ body {
 	position: relative;
 	background-color: $main-color;
 }
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
+
 .burger-btn {
 	position: fixed;
 	top: 20px;
@@ -92,9 +87,8 @@ body {
 }
 .contact {
 	width: 100%;
-	height: 200px;
 
-	padding: 50px 40px;
+	padding: 60px 40px;
 	.telephone {
 		text-decoration: none;
 		color: $text-color;
@@ -105,5 +99,55 @@ body {
 	.telephone:hover {
 		color: $main-color;
 		background-color: $secondary-color;
+	}
+}
+.about_me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+	background-color: beige;
+	padding: 20px;
+	box-shadow: 2px solid black;
+	h2,
+	h3 {
+		padding: 20px;
+	}
+}
+.opinions {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px;
+	.author {
+		font-weight: bold;
+		text-align: center;
+	}
+	.text-opinion {
+		padding: 10px;
+	}
+}
+.information_about_classes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.information_card {
+		border-radius: 5px;
+		padding: 20px;
+		width: 90%;
+		ul {
+			padding: 10px 30px;
+		}
+		button {
+			padding: 10px 50px;
+			margin: 5px 5px;
+			border-radius: 5px;
+			border: 1px solid white;
+			background-color: #b6c2ce;
+		}
+	}
+	.blue {
+		background-color: #a4b3c3;
 	}
 }
