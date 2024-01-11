@@ -7,9 +7,11 @@
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+
 	position: relative;
 	background-color: $main-color;
 }
@@ -69,8 +71,18 @@ body {
 	width: 100%;
 	display: flex;
 	height: auto;
-	// flex-direction: column;
-	align-items: end;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.h1 {
+		padding: 20px;
+		text-align: center;
+		font-size: 2rem;
+	}
+	.info {
+		text-align: center;
+		padding-bottom: 20px;
+	}
 	&__photo {
 		background-image: url('../../dist/img/Inna_photo.jpg');
 		background-size: cover;
@@ -85,22 +97,22 @@ body {
 		color: $text-color;
 	}
 }
-.contact {
-	width: 100%;
 
-	padding: 60px 40px;
-	.telephone {
-		text-decoration: none;
-		color: $text-color;
-		border-radius: 8px;
-		padding: 10px 20px;
-		border: 1px solid black;
-	}
-	.telephone:hover {
-		color: $main-color;
-		background-color: $secondary-color;
-	}
+.telephone {
+	text-decoration: none;
+	color: $text-color;
+	border-radius: 8px;
+	padding: 10px 20px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+	font-size: 1.8rem;
+	text-align: center;
 }
+.telephone:hover {
+	color: $main-color;
+	background-color: $secondary-color;
+}
+
 .about_me {
 	display: flex;
 	justify-content: center;
