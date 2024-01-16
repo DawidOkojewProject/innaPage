@@ -251,11 +251,26 @@ body {
 .questions {
 	padding: 30px 0;
 	width: 80%;
-	display: block;
+	display: flex;
+	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
 	.question {
 		font-weight: bold;
-		padding: 10px 10px;
+		text-align-last: left;
+		width: 100%;
+		padding: 20px 40px;
+		background-color: $buttons-color;
+		color: $main-color;
+		border: none;
+		margin: 5px 0px;
+		font-size: 1rem;
+		cursor: pointer;
 	}
+}
+.none {
+	display: none;
+}
+.display-yes {
+	display: block;
 }
