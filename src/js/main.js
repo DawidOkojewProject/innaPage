@@ -1,13 +1,9 @@
-let question = document.querySelector('.question_one')
-let answer = document.querySelector('.answer_one')
 let questions = document.querySelectorAll('.question')
 
-console.log(questions)
+questions.forEach(question => {
+	question.addEventListener('click', () => {
+		let answer = question.nextElementSibling
 
-const addClass = function () {
-	questions.forEach(question, () => {
-		question.nextElementSibling.classList.toggle('display_yes')
+		answer.classList.toggle('none')
 	})
-}
-
-addClass()
+})
